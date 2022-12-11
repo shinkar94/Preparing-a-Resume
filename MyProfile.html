@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinkarenko Roman</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            border: 0;
+            background-color: rgb(215,215,215);
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper .allContent{
+            margin-top: 5%;
+            max-width: 1200px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+        .wrapper .allContent .Content{
+            padding: 40px;
+        }
+        .title{
+            border-left: 4px solid rgb(212, 54, 54);
+            padding-left: 10px;
+        }
+        .progress{
+            width: 80%;
+            height: 10px;
+            background-color: rgb(223, 222, 222);
+        }
+        .progress .percent{
+            height: 100%;
+            background-color: rgb(96,131,159);
+        }
+        .ion-icon{
+            color: rgb(96,131,159);
+        }
+        /* MyContent */
+        .wrapper .allContent .myContent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .wrapper .allContent .myContent .myImage{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgb(6,6,6), -2px -2px 10px 5px rgb(128,128,128);
+        }
+        .wrapper .allContent .myContent .myImage a{
+            display: block;
+            height: 100%;
+        }
+        .wrapper .allContent .myContent .myImage a img{
+            position: relative;
+            top: 10px;
+            left: 0px;
+            width: 200px;
+            /* height: 80%; */
+        }
+        .wrapper .allContent .myContent .myInfo{
+            flex: 80%;
+            text-align: center;
+        }
+        /* PROFILE CONTENT */
+        .wrapper .allContent .profileContent{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .profileContent .contact{
+            flex: 20%;
+            margin-right: 10px;
+        }
+        .wrapper .allContent .profileContent .contact .blockContact{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .wrapper .allContent .profileContent .contact .blockContact .imgContact img{
+            width: 20px;
+            padding-right: 5px;
+        }
+        .wrapper .allContent .profileContent .profile{
+            flex: 79%;
+        }
+        /* EDUCATION CONTENT */
+        .wrapper .allContent .educationContent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .educationContent .education{
+            flex: 20%;
+        }
+        /* .wrapper .allContent .educationContent .education .blockEducation{
+            
+        } */
+        .wrapper .allContent .educationContent .education .blockEducation .dateEducation,
+        .wrapper .allContent .educationContent .experiance .blockExperiance .leftBlock .dateExperiance,
+        .wrapper .allContent .educationContent .experiance .blockExperiance .rightBlock .speciality{
+            color: rgb(96,131,159);
+            font-weight: bold;
+        }
+        .wrapper .allContent .educationContent .experiance{
+            flex: 80%;
+        }
+        .wrapper .allContent .educationContent .experiance .blockExperiance{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .educationContent .experiance .blockExperiance .leftBlock{
+            padding-right: 10px;
+        }
+        /* Language */
+        .wrapper .allContent .languageAndInterest{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .languageAndInterest .contentLanguage{
+            flex: 20%;
+        }
+        .wrapper .allContent .languageAndInterest .contentInterest{
+            flex: 80%;
+        }
+        /* SKILS */
+        .wrapper .allContent .sckils{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .sckils .contentLibraries{
+            flex: 20%;
+        }
+        .wrapper .allContent .sckils .contentSkill{
+            flex: 80%;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="allContent">
+            <div class="Content myContent">
+                <div class="myImage">
+                    <!-- <a href="https://lh3.googleusercontent.com/O75cn7eq5VQ7v5wT42YG6Q8pamlsxmbUxiufElHdb1Oz0NKMsoKfOloOuXAoLq1G3nfn_FT3n19srjbAemgpmW40Xi1jY9bzuBIUVd4Lg_laJdm5DQf3WXvocxOk3Biinz-muGM1WQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/O75cn7eq5VQ7v5wT42YG6Q8pamlsxmbUxiufElHdb1Oz0NKMsoKfOloOuXAoLq1G3nfn_FT3n19srjbAemgpmW40Xi1jY9bzuBIUVd4Lg_laJdm5DQf3WXvocxOk3Biinz-muGM1WQ=w600-h315-p-k" /> </a> -->
+                </div>
+                <div class="myInfo">
+                    <h1>Shinkarenko Roman</h1>
+                    <h3>Java Script Devoloper</h3>
+                </div>
+            </div>
+            <div class="Content profileContent">
+                <div class="contact">
+                    <h3 class="title">Contact info</h3>
+                    <div class="blockContact">
+                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/vv3a9jIu4fyklnNgRfmpIh46ZqNjUA9VoFuR8FioCMR-TodD4sBswyjLTaKQ0bHnfgri7YEtbXDESJ43OGtRUXl08B0oNbs5_Tk1xPvAYdSQBROAl-7Uqtzrhi-zM-FGS4wKlnvjfQ=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/vv3a9jIu4fyklnNgRfmpIh46ZqNjUA9VoFuR8FioCMR-TodD4sBswyjLTaKQ0bHnfgri7YEtbXDESJ43OGtRUXl08B0oNbs5_Tk1xPvAYdSQBROAl-7Uqtzrhi-zM-FGS4wKlnvjfQ=s80-p-k" /> </a></div>
+                        <p class="textContact">+375298275332</p>
+                    </div>
+                    <div class="blockContact">
+                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/GVekvSnBp51hz06TLNgwsnMKbzzKyzVGuCufOTb4HYJvK53IRpnirnWqq0HBXEFWFYpHNRQGKV9cz7cikSBr_LsL6O9Vz5Pj5sDsqfNWENJBrYWRUbJ1G0wKUDOCbFsO8vIqCUyJLg=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/GVekvSnBp51hz06TLNgwsnMKbzzKyzVGuCufOTb4HYJvK53IRpnirnWqq0HBXEFWFYpHNRQGKV9cz7cikSBr_LsL6O9Vz5Pj5sDsqfNWENJBrYWRUbJ1G0wKUDOCbFsO8vIqCUyJLg=s80-p-k" /> </a></div>
+                        <p class="textContact">Gmail</p>
+                    </div>
+                    <div class="blockContact">
+                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/0EZ1ax88DBVayNNae6XEsYcMlCwHn27BYu8Nl2nBtr4NtOC4JFn1HvkP9ieqLM-IQg3Dxb4lu3cMwqKnxLMzhNbYXypES-5089m6JuPg4B7Q-w5DHM9UAbUAVX-mih-c62i6gUW6Gg=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/0EZ1ax88DBVayNNae6XEsYcMlCwHn27BYu8Nl2nBtr4NtOC4JFn1HvkP9ieqLM-IQg3Dxb4lu3cMwqKnxLMzhNbYXypES-5089m6JuPg4B7Q-w5DHM9UAbUAVX-mih-c62i6gUW6Gg=s80-p-k" /> </a></div>
+                        <p class="textContact">Borisov, Belarus</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <h3 class="title">Profile</h3>
+                    <div class="textProfile">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quis doloribus, suscipit accusamus debitis animi id ullam accusantium velit aspernatur officia, nam omnis sunt ipsa quae vitae magnam, esse repellat modi. Ex, assumenda consequatur laboriosam officiis ea, distinctio tenetur odit, maiores quae accusantium quis sint odio quia? Quis odio minus explicabo sint accusantium, illum commodi qui vero molestiae ullam vel, deleniti accusamus ut. Doloremque quibusdam pariatur perferendis, ut, deleniti delectus quod quo ab neque expedita ipsam voluptates molestias. At, non!</div>
+                </div>
+            </div>
+            <div class="Content educationContent">
+                <div class="education">
+                    <h3 class="title">Education</h3>
+                    <div class="blockEducation">
+                        <div class="dateEducation">2012 - 2017</div>
+                        <div class="nameSpeciality">Mechanical engineer</div>
+                        <div class="nameUniversity">BGATU</div>
+                    </div>
+                </div>
+                <div class="experiance">
+                    <h3 class="title">Experiance</h3>
+                    <div class="blockExperiance">
+                        <div class="leftBlock">
+                            <div class="dateExperiance">2020 - until now</div>
+                            <div class="nameCompany">Borisov electrical networks</div>
+                        </div>
+                        <div class="rightBlock">
+                            <div class="speciality">Engineer-programmer</div>
+                            <div class="infoSpeciality">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid quasi provident accusamus quo quibusdam blanditiis quidem earum dolorum et, accusantium rem. Molestiae, nam?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Content sckils">
+                <div class="contentLibraries">
+                    <h3 class="title">Libraries</h3>
+                    <div class="blockLibraries">
+                        <img src="" alt="">
+                        <p>Redux Form</p>
+                    </div>
+                    <div class="blockLibraries">
+                        <img src="" alt="">
+                        <p>Reack Hok Form</p>
+                    </div>
+                </div>
+                <div class="contentSkill">
+                    <h3 class="title">Professional Skills</h3>
+                    <div class="skillBlock">
+                        <p>HTML</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillBlock">
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillBlock">
+                        <p>JS</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillBlock">
+                        <p>REACT(REDUX)</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillBlock">
+                        <p>PHP</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillBlock">
+                        <p>SQL</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Content languageAndInterest">
+                <div class="contentLanguage">
+                    <h3 class="title">Language</h3>
+                    <div class="languagaBlock">
+                        <p>English</p>
+                        <div class="progress">
+                            <div class="percent" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentInterest">
+                    <h3 class="title">Interest</h3>
+                    <div class="interestBlock">
+                        <ion-icon class="ion-icon" name="barbell" size="large"></ion-icon>
+                        <p>Sport</p>
+                    </div>
+                    <div class="interestBlock">
+                        <ion-icon class="ion-icon" name="videocam" size="large"></ion-icon>
+                        <p>Movies</p>
+                    </div>
+                    <div class="interestBlock">
+                        <ion-icon class="ion-icon" name="boat" size="large"></ion-icon>
+                        <p>Travel</p>
+                    </div>
+                    <div class="interestBlock">
+                        <ion-icon class="ion-icon" name="game-controller" size="large"></ion-icon>
+                        <p>Gaming</p>
+                    </div>
+                </div>
+            </div> 
+            
+            
+        </div>
+    </main>
+
+    <script>
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
