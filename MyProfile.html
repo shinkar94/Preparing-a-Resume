@@ -38,9 +38,6 @@
             height: 100%;
             background-color: rgb(96,131,159);
         }
-        .ion-icon{
-            color: rgb(96,131,159);
-        }
         /* MyContent */
         .wrapper .allContent .myContent{
             display: flex;
@@ -51,20 +48,15 @@
             width: 200px;
             height: 200px;
             background-color: grey;
-            border-radius: 50%;
+            /* border-radius: 50%; */
             overflow: hidden;
-            box-shadow: 2px 2px 10px rgb(6,6,6), -2px -2px 10px 5px rgb(128,128,128);
+            /* box-shadow: 2px 2px 10px rgb(6,6,6), -2px -2px 10px 5px rgb(128,128,128); */
         }
-        .wrapper .allContent .myContent .myImage a{
-            display: block;
-            height: 100%;
-        }
-        .wrapper .allContent .myContent .myImage a img{
+        .wrapper .allContent .myContent .myImage img{
+            width: 200px;
             position: relative;
             top: 10px;
             left: 0px;
-            width: 200px;
-            /* height: 80%; */
         }
         .wrapper .allContent .myContent .myInfo{
             flex: 80%;
@@ -88,6 +80,10 @@
         .wrapper .allContent .profileContent .contact .blockContact .imgContact img{
             width: 20px;
             padding-right: 5px;
+        }
+        .wrapper .allContent .profileContent .contact .blockContact .textContact a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
         }
         .wrapper .allContent .profileContent .profile{
             flex: 79%;
@@ -119,17 +115,6 @@
         .wrapper .allContent .educationContent .experiance .blockExperiance .leftBlock{
             padding-right: 10px;
         }
-        /* Language */
-        .wrapper .allContent .languageAndInterest{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .wrapper .allContent .languageAndInterest .contentLanguage{
-            flex: 20%;
-        }
-        .wrapper .allContent .languageAndInterest .contentInterest{
-            flex: 80%;
-        }
         /* SKILS */
         .wrapper .allContent .sckils{
             display: flex;
@@ -141,6 +126,26 @@
         .wrapper .allContent .sckils .contentSkill{
             flex: 80%;
         }
+        /* Language */
+        .wrapper .allContent .languageAndInterest{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrapper .allContent .languageAndInterest .contentLanguage{
+            flex: 20%;
+        }
+        .wrapper .allContent .languageAndInterest .contentInterest{
+            flex: 80%;
+        }
+        .wrapper .allContent .languageAndInterest .contentInterest .interestPanel{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+        /* .wrapper .allContent .languageAndInterest .contentInterest .interestPanel .interestBlock{
+           
+        } */
     </style>
 </head>
 <body>
@@ -148,7 +153,7 @@
         <div class="allContent">
             <div class="Content myContent">
                 <div class="myImage">
-                    <!-- <a href="https://lh3.googleusercontent.com/O75cn7eq5VQ7v5wT42YG6Q8pamlsxmbUxiufElHdb1Oz0NKMsoKfOloOuXAoLq1G3nfn_FT3n19srjbAemgpmW40Xi1jY9bzuBIUVd4Lg_laJdm5DQf3WXvocxOk3Biinz-muGM1WQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/O75cn7eq5VQ7v5wT42YG6Q8pamlsxmbUxiufElHdb1Oz0NKMsoKfOloOuXAoLq1G3nfn_FT3n19srjbAemgpmW40Xi1jY9bzuBIUVd4Lg_laJdm5DQf3WXvocxOk3Biinz-muGM1WQ=w600-h315-p-k" /> </a> -->
+                    <img src="https://lh3.googleusercontent.com/IUw5ZjOZbGI8XK-d-IZZm5sCMoCy0jNguatWXtAMW7oq-aGbyWRfU2febsS4ge6P9d1_KK-3eQx3OzxKTQBMcO4LJRz3hkaMZke8loPgoAh6ci-BFubSWCAdMeJJbyr0vGfqirCAIQ=w2400" alt="">
                 </div>
                 <div class="myInfo">
                     <h1>Shinkarenko Roman</h1>
@@ -159,16 +164,16 @@
                 <div class="contact">
                     <h3 class="title">Contact info</h3>
                     <div class="blockContact">
-                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/vv3a9jIu4fyklnNgRfmpIh46ZqNjUA9VoFuR8FioCMR-TodD4sBswyjLTaKQ0bHnfgri7YEtbXDESJ43OGtRUXl08B0oNbs5_Tk1xPvAYdSQBROAl-7Uqtzrhi-zM-FGS4wKlnvjfQ=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/vv3a9jIu4fyklnNgRfmpIh46ZqNjUA9VoFuR8FioCMR-TodD4sBswyjLTaKQ0bHnfgri7YEtbXDESJ43OGtRUXl08B0oNbs5_Tk1xPvAYdSQBROAl-7Uqtzrhi-zM-FGS4wKlnvjfQ=s80-p-k" /> </a></div>
+                        <div class="imgContact"><img src="https://lh3.googleusercontent.com/AENjXBIuA2xhdM_iq0nSE5pHyAtnXc7xBero0nqFx2lzHXbpCEYCHqqQg9oh42RnINXXuT4__O8IwRK0aJX7AbuCZezbTkWKG7yDDUiGmcpaScF2y-z35aVGWyjPE16H4--3KkRZbA=s80-p-k" alt=""></div>
                         <p class="textContact">+375298275332</p>
                     </div>
                     <div class="blockContact">
-                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/GVekvSnBp51hz06TLNgwsnMKbzzKyzVGuCufOTb4HYJvK53IRpnirnWqq0HBXEFWFYpHNRQGKV9cz7cikSBr_LsL6O9Vz5Pj5sDsqfNWENJBrYWRUbJ1G0wKUDOCbFsO8vIqCUyJLg=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/GVekvSnBp51hz06TLNgwsnMKbzzKyzVGuCufOTb4HYJvK53IRpnirnWqq0HBXEFWFYpHNRQGKV9cz7cikSBr_LsL6O9Vz5Pj5sDsqfNWENJBrYWRUbJ1G0wKUDOCbFsO8vIqCUyJLg=s80-p-k" /> </a></div>
-                        <p class="textContact">Gmail</p>
+                        <div class="imgContact"><img src="https://lh3.googleusercontent.com/784-26MY5uWVCS_d5LwlahjNhyDw5baU_tEH9x_323TWjGEf-JZqqmGNpoZltQxkFDwYSlEZEOunCbuUnT3G4UzcUKU9yQzAyCRLKkSO6AhxHknmG00ziaLsOnQynmIozuiIOk3Jsg=s80-p-k" alt=""></div>
+                        <p class="textContact"><a href="mailto:romka94shinkarenko@gmail.com">Gmail</a></p>
                     </div>
                     <div class="blockContact">
-                        <div class="imgContact"><a href="https://lh3.googleusercontent.com/0EZ1ax88DBVayNNae6XEsYcMlCwHn27BYu8Nl2nBtr4NtOC4JFn1HvkP9ieqLM-IQg3Dxb4lu3cMwqKnxLMzhNbYXypES-5089m6JuPg4B7Q-w5DHM9UAbUAVX-mih-c62i6gUW6Gg=s80-p-k?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/0EZ1ax88DBVayNNae6XEsYcMlCwHn27BYu8Nl2nBtr4NtOC4JFn1HvkP9ieqLM-IQg3Dxb4lu3cMwqKnxLMzhNbYXypES-5089m6JuPg4B7Q-w5DHM9UAbUAVX-mih-c62i6gUW6Gg=s80-p-k" /> </a></div>
-                        <p class="textContact">Borisov, Belarus</p>
+                        <div class="imgContact"><img src="https://lh3.googleusercontent.com/EbfCoaKydZ0BP9ijCj7axHE_O6yRpaVa0WAE00zFA76kNqPE5uaQuQ_dh7UdwBgiwbYFf1zi_ACLWZwRWfyOTjClwNZvikxcgO10ttBU_BBQB4c2rdY8eFXYxqiO4e0t-ZS9zBOf3A=s80-p-k" alt=""></div>
+                        <p class="textContact"><a target="_blank" href="https://www.google.com/maps/place/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2/@54.220998,28.4442116,12z/data=!3m1!4b1!4m5!3m4!1s0x46daf80fb10b19e9:0x268d09cfd56d0a55!8m2!3d54.2243254!4d28.5119119">Borisov, Belarus</a></p>
                     </div>
                 </div>
                 <div class="profile">
@@ -226,9 +231,9 @@
                         </div>
                     </div>
                     <div class="skillBlock">
-                        <p>JS</p>
+                        <p>JS Native</p>
                         <div class="progress">
-                            <div class="percent" style="width: 90%;"></div>
+                            <div class="percent" style="width: 70%;"></div>
                         </div>
                     </div>
                     <div class="skillBlock">
@@ -263,22 +268,25 @@
                 </div>
                 <div class="contentInterest">
                     <h3 class="title">Interest</h3>
-                    <div class="interestBlock">
-                        <ion-icon class="ion-icon" name="barbell" size="large"></ion-icon>
-                        <p>Sport</p>
+                    <div class="interestPanel">
+                        <div class="interestBlock">
+                            <img src="https://lh3.googleusercontent.com/eOSFkFk8AjjTgzj0kbUUFDvyx7_UJUZAlaqVz47A852XHA2nS0ayBCWCTF-ISRAIuOrzS4cRKlxG5XtWsWxRs_s_THNvoYUNSSKWzgfRgm-Da7YycuQi6DxwUWTls9wOW0RTqmUfSg=s100-p-k" alt="">
+                            <p>Sport</p>
+                        </div>
+                        <div class="interestBlock">
+                            <img src="https://lh3.googleusercontent.com/vXz1fla23DFngHldj-K_ypYxKfro_bW4xUEX0e0TcoNUU5cFCj4yMIiDdkSvl_tk8CXFjLRxRcIcZZwDslr0jhP0F6hTscUAdSP7LSL7d_XRYyhgQEw8UNKgVj40PTYxZVkXnGXOnQ=s100-p-k" alt="">
+                            <p>Movies</p>
+                        </div>
+                        <div class="interestBlock">
+                            <img src="https://lh3.googleusercontent.com/g4wz6KvkPMAacfZe8Zy0G1hJhnS79yWnWoZP_WZWt7Q1Iaw937__NjC6L4myV_Fl92HYXAfqtQDFc_9mGmAUiV0niN5AoNLQXBUi1XJZV2-5JquqmZdZJyuqiwhMjBsXNdhRGQu3WA=s100-p-k" alt="">
+                            <p>Travel</p>
+                        </div>
+                        <div class="interestBlock">
+                            <img src="https://lh3.googleusercontent.com/hzzITjbYBtrJ5hxfRP3nzgutG6TJ0ohfC6ZE6QqMGAfkC5NDVPSl0mSI2jCgybEQ7gR7DmhhV_Olvdol7wtawTU9I3Wd0bn0d_HlFs6VYmHRUwdm_eLUZQenR-LQqkyqKFwlWZsKMw=s100-p-k" alt="">
+                            <p>Gaming</p>
+                        </div>
                     </div>
-                    <div class="interestBlock">
-                        <ion-icon class="ion-icon" name="videocam" size="large"></ion-icon>
-                        <p>Movies</p>
-                    </div>
-                    <div class="interestBlock">
-                        <ion-icon class="ion-icon" name="boat" size="large"></ion-icon>
-                        <p>Travel</p>
-                    </div>
-                    <div class="interestBlock">
-                        <ion-icon class="ion-icon" name="game-controller" size="large"></ion-icon>
-                        <p>Gaming</p>
-                    </div>
+                    
                 </div>
             </div> 
             
@@ -289,7 +297,5 @@
     <script>
 
     </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
