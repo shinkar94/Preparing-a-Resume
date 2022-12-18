@@ -7,9 +7,9 @@
     <title>Shinkarenko Roman</title>
     <style>
         body{
-            /* --fone: rgb(49, 49, 49);
+            --fone: rgb(49, 49, 49);
             --foneContent: rgb(0,0,0);
-            --colorContent: rgb(218,218,218); */
+            --colorContent: rgb(218,218,218);
             padding: 0%;
             margin: 0%;
             border: 0;
@@ -20,12 +20,27 @@
             justify-content: center;
         }
         .wrapper .allContent{
+            position: relative;
             margin-top: 5%;
+            margin-left: 10px;
+            margin-right: 10px;
             max-width: 1200px;
             box-shadow: 0px 0px 10px rgb(0, 0, 0);
             background-color: rgb(255, 255, 255);
             background-color: var(--foneContent, rgb(255,255,255));
             color: var(--colorContent, rgb(0, 0, 0));
+        }
+        .wrapper .allContent .timePanel{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgb(212, 54, 54);
+            border-radius: 2px;
+        }
+        .wrapper .allContent .timePanel p{
+            color: rgb(255, 255, 255);
+            margin: 0%;
+            padding: 2px;
         }
         .wrapper .allContent .Content{
             padding: 40px;
@@ -156,6 +171,7 @@
 <body>
     <main class="wrapper">
         <div class="allContent">
+            <div class="timePanel"><p class="nowTime"></p></div>
             <div class="Content myContent">
                 <div class="myImage">
                     <img src="https://lh3.googleusercontent.com/IUw5ZjOZbGI8XK-d-IZZm5sCMoCy0jNguatWXtAMW7oq-aGbyWRfU2febsS4ge6P9d1_KK-3eQx3OzxKTQBMcO4LJRz3hkaMZke8loPgoAh6ci-BFubSWCAdMeJJbyr0vGfqirCAIQ=w2400" alt="">
@@ -300,23 +316,55 @@
     </main>
 
     <script>
-        let today = new Date();
+        // ****время на странице
         (function searchTime(){
+            const textTime = document.querySelector(".nowTime");
             let today = new Date();
             let now = today.toLocaleTimeString().slice(0, -3);
-
+            textTime.textContent = now;
+            
             let timer = setInterval(()=>{
                 let today = new Date();
                 let timeStart = today.toLocaleTimeString();
-                timeStart.substr(-2, 2) == "00" && nowTime()
+                timeStart.substr(-2, 2) == "00" && nowTime();
             }, 1000)
             const nowTime = () =>{
                 clearInterval(timer);
                 setInterval(()=>{
                     let today = new Date();
                     let now = today.toLocaleTimeString().slice(0, -3);
+                    textTime.textContent = now;
                 }, 60000)
             }
+            // ден - ночь в зависимости от времени 
+            const dayNight = (now) =>{
+                console.log(now)
+                let time = now.split(":");
+                let convertTime = time[0].split("");
+                let numTime;
+                const bodyColor = document.body;
+                console.log(bodyColor)
+                if(Number(convertTime[0]) === 0 && Number(convertTime[1]) === 0){
+                    numTime = 0;
+                }else if(Number(convertTime[0]) === 0 && Number(convertTime[1]) != 0){
+                    numTime = Number(convertTime[1]);
+                }else{
+                    numTime = Number(time[0]);
+                }
+ 
+                numTime >= 6 && numTime <= 18 
+                ? bodyColor.style.cssText = `
+                    --fone: rgb(255, 255, 255);
+                    --foneContent: rgb(217,217,217);
+                    --colorContent: rgb(0,0,0);    
+                `
+                : bodyColor.style.cssText = `
+                    --fone: rgb(49, 49, 49);
+                    --foneContent: rgb(0,0,0);
+                    --colorContent: rgb(218,218,218);    
+                `
+            }
+            dayNight(now)
         }())
     </script>
 </body>
