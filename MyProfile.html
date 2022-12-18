@@ -300,7 +300,24 @@
     </main>
 
     <script>
+        let today = new Date();
+        (function searchTime(){
+            let today = new Date();
+            let now = today.toLocaleTimeString().slice(0, -3);
 
+            let timer = setInterval(()=>{
+                let today = new Date();
+                let timeStart = today.toLocaleTimeString();
+                timeStart.substr(-2, 2) == "00" && nowTime()
+            }, 1000)
+            const nowTime = () =>{
+                clearInterval(timer);
+                setInterval(()=>{
+                    let today = new Date();
+                    let now = today.toLocaleTimeString().slice(0, -3);
+                }, 60000)
+            }
+        }())
     </script>
 </body>
 </html>
