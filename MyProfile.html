@@ -338,12 +338,10 @@
             }
             // ден - ночь в зависимости от времени 
             const dayNight = (now) =>{
-                console.log(now)
                 let time = now.split(":");
                 let convertTime = time[0].split("");
                 let numTime;
                 const bodyColor = document.body;
-                console.log(bodyColor)
                 if(Number(convertTime[0]) === 0 && Number(convertTime[1]) === 0){
                     numTime = 0;
                 }else if(Number(convertTime[0]) === 0 && Number(convertTime[1]) != 0){
