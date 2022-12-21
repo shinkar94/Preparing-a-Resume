@@ -171,6 +171,7 @@
 <body>
     <main class="wrapper">
         <div class="allContent">
+            <input class="controlDay" type="checkbox">
             <div class="timePanel"><p class="nowTime"></p></div>
             <div class="Content myContent">
                 <div class="myImage">
@@ -364,6 +365,12 @@
             }
             dayNight(now)
         }())
+        // день ночь по клику
+        const controlDay = document.querySelector(".controlDay")
+        controlDay.addEventListener("click", filterDay);
+        function filterDay(){
+            alert(controlDay.checked ? true : false)
+        }
     </script>
 </body>
 </html>
